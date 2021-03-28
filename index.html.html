@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>GreenVision - это просто</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="csrf-token"
+      content="Q1vYs5LjAtlWY4OZLGEVgyaBUjnrXCzM4Dkmmnnj"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+
+  <body>
+    <div class="check-in-pos">
+      <div class="check-in-pos-bloc">
+        <div class="check-in-wrp">
+          <h2>Регистрация</h2>
+          <div class="check-in-line"></div>
+          <div class="check-input-wrp">
+            <div class="check-input-error check-int-er-surname">
+              <p>Введите Фамилию</p>
+            </div>
+            <input class="check-input" placeholder="Фамилия" type="text" />
+            <div class="check-input-error check-int-er-name">
+              <p>Введите Имя</p>
+            </div>
+            <input class="check-input" placeholder="Имя" type="text" />
+            <div class="check-input-error check-int-er-tel">
+              <p>Введите телефон</p>
+            </div>
+            <input type="tel" class="check-input" placeholder="Телефон" />
+            <div class="check-input-error check-int-er-mail">
+              <p>Пользователь с таким номером уже существует!</p>
+            </div>
+            <input class="check-input" placeholder="E-mail" type="email" />
+            <div class="check-input-error check-int-er-pas">
+              <p>Пароль должен быть минимум 6 символов</p>
+            </div>
+            <div class="check-pas-wrp">
+              <input
+                type="password"
+                name="password"
+                id="password-input"
+                class="check-input"
+                placeholder="Пароль"
+              />
+              <a href="#"
+                ><img
+                  class="check-input-pas-icon"
+                  src="icon/see-password-icon-check.svg"
+                  alt=""
+                />
+                <img
+                  class="check-input-pas-icon"
+                  onclick="return show_hide_password(this);"
+                  src="icon/see-password-icon-check-actively.svg"
+                  alt=""
+                />
+              </a>
+            </div>
+            <button class="check-in-btn">Регистрация</button>
+          </div>
+          <div class="check-text-come">
+            <a class="check-link" href="#">Войти</a>
+            <div class="check-text">
+              <p>
+                Регистрируясь, вы соглашаетесь с
+                <a href="#">пользовательским соглашением.</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script> -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

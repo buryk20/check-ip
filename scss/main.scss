@@ -1,0 +1,224 @@
+@font-face {
+  font-family: "Roboto-r";
+  src: url("../fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Roboto-m";
+  src: url("../fonts/Roboto-Medium.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+%text-roboto-r {
+  font-family: "Roboto-r", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+%padding-check {
+  padding: 0 16px;
+}
+
+%margin-b {
+  margin-bottom: 16px;
+}
+
+%input-check {
+  width: 268px;
+  @extend %margin-b;
+  padding: 12px 16px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  border: 1px solid #8a8a8a;
+}
+
+.check-in-wrp {
+  max-width: 298px;
+  box-sizing: border-box;
+  background: #ffffff;
+  box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.check-in-wrp > h2 {
+  padding-top: 24px;
+  padding: 24px 0 0 16px;
+  margin-bottom: 24px;
+  font-family: "Roboto-m", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.check-in-line {
+  border-top: 1px solid #159822;
+  @extend %margin-b;
+}
+
+.check-input-wrp {
+  @extend %padding-check;
+  @extend %margin-b;
+}
+
+.check-input {
+  font-size: 16px;
+  @extend %text-roboto-r;
+}
+
+.check-input-wrp > input {
+  @extend %input-check;
+}
+
+.check-input-wrp > div > input {
+  @extend %input-check;
+}
+
+.check-input-wrp > input::placeholder {
+  font-size: 16px;
+  @extend %text-roboto-r;
+}
+
+.check-in-pos {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: auto;
+}
+
+.check-in-pos-bloc {
+  width: 298px;
+  height: 622px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+
+  .check-in-wrp {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: none;
+  }
+}
+
+.check-in-btn {
+  width: 268px;
+  padding: 8px 80px;
+  box-sizing: border-box;
+  font-size: 18px;
+  color: #ffffff;
+  @extend %text-roboto-r;
+  background-color: #8a8a8a;
+  border-radius: 8px;
+  border: #8a8a8a;
+  cursor: pointer;
+}
+
+.check-in-btn:active {
+  background-color: #159822;
+  border: #159822;
+}
+
+.check-text-come {
+  @extend %padding-check;
+  text-align: center;
+}
+
+.check-link {
+  @extend %text-roboto-r;
+  color: #159822;
+  font-size: 16px;
+  text-decoration-line: none;
+}
+
+.check-text {
+  padding-bottom: 16px;
+  padding-top: 14px;
+  @extend %text-roboto-r;
+}
+
+.check-text {
+  a {
+    color: #159822;
+    font-size: 16px;
+    text-decoration-line: underline;
+  }
+}
+
+.check-input-error {
+  margin-bottom: 5px;
+  @extend %text-roboto-r;
+  color: #ff0000;
+  font-size: 12px;
+}
+
+.check-int-er-surname {
+  display: none;
+}
+
+.check-int-er-name {
+  display: none;
+}
+
+.check-int-er-tel {
+  display: none;
+}
+
+.check-int-er-mail {
+  display: none;
+}
+
+.check-int-er-pas {
+  display: none;
+}
+
+.check_input_pas_icon_actively {
+  position: absolute;
+}
+
+// .check_input_pas_icon_actively::before {
+//   content: url("../icon/see-password-icon-check-actively.svg");
+//   position: absolute;
+//   width: 15px;
+//   height: 15px;
+//   top: 14px;
+//   right: 13px;
+//   // display: none;
+//   cursor: pointer;
+// }
+
+.check-pas-wrp {
+  position: relative;
+}
+
+.check-input-pas-icon-actively {
+  position: absolute;
+  top: 13px;
+  right: 13px;
+}
+
+.check-input-pas-icon-actively-none {
+  display: none;
+}
+
+.check-input-pas-icon {
+  position: absolute;
+  top: 11px;
+  right: 13px;
+}
+
+// .check-input-pas-icon::before {
+//   content: url("../icon/see-password-icon-check.svg");
+//   position: absolute;
+//   width: 15px;
+//   height: 15px;
+//   top: 13px;
+//   right: 13px;
+//   cursor: pointer;
+// }
