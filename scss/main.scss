@@ -158,49 +158,32 @@
   font-size: 12px;
 }
 
-.check-int-er-surname {
-  display: none;
-}
+// .check-int-er-surname {
+//   display: none;
+// }
 
-.check-int-er-name {
-  display: none;
-}
+// .check-int-er-name {
+//   display: none;
+// }
 
-.check-int-er-tel {
-  display: none;
-}
+// .check-int-er-tel {
+//   display: none;
+// }
 
-.check-int-er-mail {
-  display: none;
-}
+// .check-int-er-mail {
+//   display: none;
+// }
 
-.check-int-er-pas {
-  display: none;
-}
+// .check-int-er-pas {
+//   display: none;
+// }
 
 .check_input_pas_icon_actively {
   position: absolute;
 }
 
-// .check_input_pas_icon_actively::before {
-//   content: url("../icon/see-password-icon-check-actively.svg");
-//   position: absolute;
-//   width: 15px;
-//   height: 15px;
-//   top: 14px;
-//   right: 13px;
-//   // display: none;
-//   cursor: pointer;
-// }
-
 .check-pas-wrp {
   position: relative;
-}
-
-.check-input-pas-icon-actively {
-  position: absolute;
-  top: 13px;
-  right: 13px;
 }
 
 .check-input-pas-icon-actively-none {
@@ -209,16 +192,18 @@
 
 .check-input-pas-icon {
   position: absolute;
-  top: 11px;
+  width: 22px;
+  height: 20px;
+  top: 13px;
   right: 13px;
+  background-image: url("../icon/see-password-icon-check-actively.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-// .check-input-pas-icon::before {
-//   content: url("../icon/see-password-icon-check.svg");
-//   position: absolute;
-//   width: 15px;
-//   height: 15px;
-//   top: 13px;
-//   right: 13px;
-//   cursor: pointer;
-// }
+.check-input-pas-icon.view {
+  top: 14px;
+  background: url("../icon/see-password-icon-check.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
