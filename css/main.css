@@ -143,6 +143,11 @@
 }
 
 .check-input-pas-icon-actively-none {
+  position: absolute;
+  width: 22px;
+  height: 20px;
+  top: 13px;
+  right: 13px;
   display: none;
 }
 
@@ -152,14 +157,12 @@
   height: 20px;
   top: 13px;
   right: 13px;
-  background-image: url("../icon/see-password-icon-check-actively.svg");
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
-.check-input-pas-icon.view {
-  top: 14px;
-  background: url("../icon/see-password-icon-check.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+.check-icon-pas {
+  position: absolute;
+  width: 22px;
+  height: 20px;
+  top: 0;
+  right: 0;
 }
