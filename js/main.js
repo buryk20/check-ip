@@ -17,3 +17,4 @@ document.addEventListener("click", (e) => {
         e.target.parentElement.querySelector(".check-input").value = "";
     }
 })
+
