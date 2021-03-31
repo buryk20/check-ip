@@ -11,3 +11,9 @@ function show_hide_password() {
     }
     return false;
 }
+
+document.addEventListener("click", (e) => {
+    if (e.target.classList.contains("check-in-delete-img")) {
+        e.target.parentElement.querySelector(".check-input").value = "";
+    }
+})

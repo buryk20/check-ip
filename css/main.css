@@ -13,6 +13,18 @@
   margin: 0;
 }
 
+.check-input, .check-input-wrp > input::-webkit-input-placeholder, .check-in-btn, .check-link, .check-text, .check-input-error {
+  font-family: "Roboto-r", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.check-input, .check-input-wrp > input:-ms-input-placeholder, .check-in-btn, .check-link, .check-text, .check-input-error {
+  font-family: "Roboto-r", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.check-input, .check-input-wrp > input::-ms-input-placeholder, .check-in-btn, .check-link, .check-text, .check-input-error {
+  font-family: "Roboto-r", Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .check-input, .check-input-wrp > input::placeholder, .check-in-btn, .check-link, .check-text, .check-input-error {
   font-family: "Roboto-r", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -28,16 +40,19 @@
 .check-input-wrp > input, .check-input-wrp > div > input {
   width: 268px;
   padding: 12px 16px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-radius: 8px;
   border: 1px solid #8a8a8a;
 }
 
 .check-in-wrp {
   max-width: 298px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background: #ffffff;
-  box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
 }
 
@@ -55,6 +70,18 @@
 }
 
 .check-input {
+  font-size: 16px;
+}
+
+.check-input-wrp > input::-webkit-input-placeholder {
+  font-size: 16px;
+}
+
+.check-input-wrp > input:-ms-input-placeholder {
+  font-size: 16px;
+}
+
+.check-input-wrp > input::-ms-input-placeholder {
   font-size: 16px;
 }
 
@@ -93,7 +120,8 @@
 .check-in-btn {
   width: 268px;
   padding: 8px 80px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-size: 18px;
   color: #ffffff;
   background-color: #8a8a8a;
@@ -114,7 +142,8 @@
 .check-link {
   color: #159822;
   font-size: 16px;
-  text-decoration-line: none;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
 }
 
 .check-text {
@@ -125,7 +154,8 @@
 .check-text a {
   color: #159822;
   font-size: 16px;
-  text-decoration-line: underline;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
 }
 
 .check-input-error {
@@ -166,3 +196,15 @@
   top: 0;
   right: 0;
 }
+
+.check-in-delete {
+  position: relative;
+}
+
+.check-in-delete-img {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=main.css.map */

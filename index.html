@@ -13,7 +13,7 @@
       name="csrf-token"
       content="Q1vYs5LjAtlWY4OZLGEVgyaBUjnrXCzM4Dkmmnnj"
     />
-    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="css/main.css" />
   </head>
 
   <body>
@@ -22,23 +22,36 @@
         <div class="check-in-wrp">
           <h2>Регистрация</h2>
           <div class="check-in-line"></div>
-          <div class="check-input-wrp">
+          <div id="rst" class="check-input-wrp">
             <div class="check-input-error check-int-er-surname">
               <p>Введите Фамилию</p>
             </div>
-            <input class="check-input" placeholder="Фамилия" type="text" />
+            <div class="check-in-delete">
+            <input class="check-input" placeholder="Фамилия" type="text"/>
+            <img class="check-in-delete-img" src="icon/delete-icon-check.svg" alt="">
+            </div>
             <div class="check-input-error check-int-er-name">
               <p>Введите Имя</p>
             </div>
+            <div class="check-in-delete"> 
             <input class="check-input" placeholder="Имя" type="text" />
+            <img class="check-in-delete-img" src="icon/delete-icon-check.svg" alt="">
+            </div>
             <div class="check-input-error check-int-er-tel">
               <p>Введите телефон</p>
             </div>
+            <div class="check-in-delete">
             <input type="tel" class="check-input" placeholder="Телефон" />
-            <div class="check-input-error check-int-er-mail">
-              <p>Пользователь с таким номером уже существует!</p>
+            <img class="check-in-delete-img" src="icon/delete-icon-check.svg" alt="">
             </div>
-            <input class="check-input" placeholder="E-mail" type="email" />
+              
+              <div class="check-input-error check-int-er-mail">
+                <p>Пользователь с таким номером уже существует!</p>
+              </div>
+              <div class="check-in-delete">
+              <input class="check-input" placeholder="E-mail" type="email" />
+              <img class="check-in-delete-img" src="icon/delete-icon-check.svg" alt="">
+            </div>  
             <div class="check-input-error check-int-er-pas">
               <p>Пароль должен быть минимум 6 символов</p>
             </div>
